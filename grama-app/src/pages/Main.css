@@ -1,0 +1,46 @@
+*{
+    background-color: #E2FDFF;
+}
+
+.mainHeading{
+    text-align: center;
+    font-size: 50px;
+}
+
+.menu{
+    margin-top: 150px;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    font-size: 20;
+    color: white;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.applybtn{
+    background-color: #51B6FF;
+}
+
+.applybtn:hover{
+    background-color: #209ffa;
+}
+
+.statusbtn{
+    background-color: #A4B2C7;
+    margin-top: 15px;
+}
+
+.statusbtn:hover{
+    background-color: #768499;
+}
+
+
+
