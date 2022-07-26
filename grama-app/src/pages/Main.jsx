@@ -1,5 +1,5 @@
 import React from 'react';
-import './Main.css';
+import '../css/Main.css';
 
 function Main() {
     return (
@@ -7,13 +7,11 @@ function Main() {
         <Heading/>
 
         <div className='menu'>
-          <div className="center">
             <button className='applybtn btn'>Apply for Grama Certificate</button>
-          </div>
-          
-          <div className='center'>
-            <button className='statusbtn btn' onClick = {console.log('hello')}>Check Status</button>
-          </div>
+
+            <br/>
+
+            <button className='statusbtn btn'>Check Status</button>
         </div>
         
         
@@ -26,11 +24,9 @@ function Main() {
     console.log("hey");
   }
 
-
-
   function Heading(){
     return(
-      <h1 className = 'mainHeading'>Grama Check</h1>
+      <h1 className = 'mainHeading'>Welcome to Grama Check</h1>
     );
   }
 
