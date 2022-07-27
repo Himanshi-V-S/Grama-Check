@@ -17,7 +17,7 @@
 .btn{
     border-radius: 10px;
     padding: 20px;
-    width: 100%;
+    width: 25%;
     color: white;
     font-size: 18px;
     
@@ -38,6 +38,15 @@
 
 .statusbtn:hover{
     background-color: #768499;
+}
+
+.status{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #ffe6e6;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 

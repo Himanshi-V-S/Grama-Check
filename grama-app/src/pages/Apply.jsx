@@ -33,7 +33,7 @@ class Form extends React.Component {
 
         <label>
           Address:
-          <input type="textarea" className='addressTxtBox'/>
+          <textarea className='addressTxtBox'/>
         </label>
 
         <br/>
@@ -46,7 +46,8 @@ class Form extends React.Component {
         <br/>
 
         <div className='btnPanel'>
-          <input type="submit" value="Apply" className='applyBtn btn'/>
+          {/* Create and add a function when apply btn is clicked  */}
+          <input type="submit" value="Apply" className='applyBtn btn'/>  
           <input type="reset" value="Reset" className='resetBtn btn'/>
         </div>
     
