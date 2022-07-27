@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import Footer from '../components/Footer'
 import "../css/signup.css"
 function Signup(){
+    const navigate = useNavigate();
+    const navigateToSignin = () =>{navigate('/signin');};
     return (
         <div className="mainContainer">
             <h1 className="heading">Sign Up For Grama Check</h1>
@@ -12,22 +15,22 @@ function Signup(){
                     <div className="line"> 
                         <div className="cell">
                             <label for="firstname" className="labels"> First Name:</label>         
-                            <input className="textInputs" type="text" name="firstname" size="15"/>
+                            <input className="textInputs" type="text" name="firstname" />
                         </div>
                         <div className="cell">
                             <label for="lastname" className="labels"> Last Name: </label>         
-                            <input className="textInputs" type="text" name="lastname" size="15"/>
+                            <input className="textInputs" type="text" name="lastname" />
                         </div>
                         
                     </div>
                     <div className="line"> 
                         <div className="cell">
                             <label for="psw" className="labels"> Password: </label>         
-                            <input className="textInputs" type="password" name="psw" size="15"/>
+                            <input className="textInputs" type="password" name="psw" />
                         </div>
                         <div className="cell">
                             <label for="pswRepeat" className="labels"> Confirm Password: </label>         
-                            <input className="textInputs" type="password" name="pswRepeat" size="15"/>
+                            <input className="textInputs" type="password" name="pswRepeat" />
                         </div>
                     </div>
                     <div className="line">
@@ -69,7 +72,7 @@ function Signup(){
                         </div>
                         <div className="cell">
                             <label for="address" className="labels"> Address: </label>         
-                            <input className="textInputs" type="text" name="address" size="15"/>
+                            <input className="textInputs" type="text" name="address" />
                         </div>
                     </div>
 
@@ -77,7 +80,7 @@ function Signup(){
                 <div>
                     <button type="submit" className="signupBtn">Sign Up</button>
                     <h6 className="text">Have already an account?</h6>
-                    <h6 className="loginText">Login Here</h6>
+                    <h6 className="loginText" onClick={navigateToSignin}>Login Here</h6>
                 </div>
                 
             </form>
