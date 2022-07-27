@@ -5,7 +5,7 @@
     height: 90vh;
 }
 .signupForm{
-    background-color: white;
+    /* background-color: white; */
     width: 70%;
     height:70vh;
     position: absolute;
@@ -79,6 +79,9 @@
     margin-left:44%;
     
 }
+.signupBtn:hover{
+    background-color: #209ffa;
+ }
 .text{
     text-align: center;
     margin-top: 1%;
@@ -90,3 +93,6 @@
     margin-top: 1%;
     color: #51B6FF;
 }
+.loginText:hover{
+    color: #209ffa;
+ }
